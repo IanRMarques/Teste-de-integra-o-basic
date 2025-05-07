@@ -4,7 +4,7 @@
     <title>API de Tarefas</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
@@ -13,22 +13,28 @@
         }
         h1 {
             color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            text-align: center;
         }
-        .links {
-            margin-top: 30px;
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 8px;
         }
         a {
-            color: #3498db;
+            color: #2c3e50;
             text-decoration: none;
             font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
+            color: #3498db;
         }
     </style>
 </head>
@@ -36,20 +42,19 @@
     <h1>Página inicial para integração!!</h1>
     <p>Feito para verificar o que acontece por trás do FastApi.</p>
     
-    <div class="links">
-        <h2>Link:</h2>
-        <ul>
-            <li><a href="/docs" target="_blank">/docs</a> - Teste a API diretamente no seu navegador (Swagger UI)</li>
-            <li><a href="/redoc" target="_blank">/redoc</a> - Documentação alternativa (Redoc)</li>
-        </ul>
-        
-        <h2>Endpoints:</h2>
-        <ul>
-            <li><strong>GET /todos</strong> - Lista todas as suas tarefas</li>
-            <li><strong>POST /todos</strong> - Adiciona uma nova tarefa</li>
-            <li><strong>GET /todos/{id}</strong> - Busca uma tarefa específica</li>
-        </ul>
-    </div>
+    <h2>Link:</h2>
+    <ul>
+        <li><a href="/docs" target="_blank"><strong>/docs</strong> - Teste a API diretamente no seu navegador (Swagger UI)</a></li>
+        <li><a href="/redoc" target="_blank"><strong>/redoc</strong> - Documentação alternativa (Redoc)</a></li>
+    </ul>
+    
+    <h2>Endpoints:</h2>
+    <ul>
+        <li><strong>GET /todos</strong> - Lista todas as suas tarefas</li>
+        <li><strong>POST /todos</strong> - Adiciona uma nova tarefa</li>
+        <li><strong>GET /todos/{id}</strong> - Busca uma tarefa específica</li>
+    </ul>
+
     <p>Desenvolvido por Ian Marques</p>
 </body>
 </html>
